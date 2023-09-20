@@ -1,0 +1,567 @@
+0 bunchid:0 @0/ 0: start ID=122 / top level operator
+ nexts= 0:avatar transition/ ID=162  in block CA (silent)
+attributes=0 0 50 
+1 bunchid:0 @0/ 0: start ID=167 / top level operator
+ nexts= 0:avatar transition/ ID=174  in block US (silent)
+attributes=0 
+2 bunchid:0 @0/ 0: start ID=177 / top level operator
+ nexts= 0:avatar transition/ ID=184  in block DC_motor (silent)
+attributes=0 
+3 bunchid:0 @0/ 0: avatar transition ID=162 / top level operator
+ value: weight:1.0 
+ nexts= 0:Waiting/ ID=123 
+weight=1.0
+ in block CA (silent)
+attributes=0 0 50 
+4 bunchid:0 @0/ 0: Waiting ID=123 / top level operator
+ nexts= 0:avatar transition/ ID=149  in block CA (silent)
+attributes=0 0 50 
+5 bunchid:0 @0/ 0: avatar transition ID=174 / top level operator
+ value: weight:1.0 
+ nexts= 0:Init/ ID=168 
+weight=1.0
+ in block US (silent)
+attributes=0 
+6 bunchid:0 @0/ 0: Init ID=168 / top level operator
+ nexts= 0:avatar transition/ ID=173  in block US (silent)
+attributes=0 
+7 bunchid:0 @0/ 0: avatar transition ID=173 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=0 
+8 bunchid:0 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=0 
+9 bunchid:0 @0/ 0: avatar transition ID=184 / top level operator
+ value: weight:1.0 
+ nexts= 0:Init/ ID=178 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+10 bunchid:0 @0/ 0: Init ID=178 / top level operator
+ nexts= 0:avatar transition/ ID=183  in block DC_motor (silent)
+attributes=0 
+11 bunchid:0 @0/ 0: avatar transition ID=183 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+12 bunchid:0 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=0 
+13 bunchid:0 @0/ 0: avatar transition ID=175 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=170 
+weight=1.0
+ in block US
+attributes=0 
+14 bunchid:0 @0/ 0: random ID=170 / top level operator
+ nexts= 0:avatar transition/ ID=176  in block US
+attributes=49 
+action#0: Distance = 49 
+15 bunchid:1 @0/ 0: avatar transition ID=176 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=171 
+weight=1.0
+ in block US (silent)
+attributes=49 
+16 bunchid:1 @0/ 0: avatar transition ID=149 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=124 
+weight=1.0
+ in block CA
+attributes=0 0 50 
+17 bunchid:1 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=124 / top level operator
+ nexts= 0:avatar transition/ ID=148  in block CA
+attributes=0 0 50 
+18 bunchid:1 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=0 
+19 bunchid:1 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=0 
+action#0: 0 
+20 bunchid:2 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+21 bunchid:2 @0/ 0: avatar transition ID=148 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=125 
+weight=1.0
+ in block CA (silent)
+attributes=0 0 50 
+22 bunchid:2 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=0 
+23 bunchid:2 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+24 bunchid:2 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=0 
+25 bunchid:2 @0/ 0: action_on_signal:US_Distance_Get ID=171 / top level operator
+ nexts= 0:avatar transition/ ID=172  in block US
+attributes=49 
+26 bunchid:2 @0/ 0: action_on_signal:US_Distance_Get ID=125 / top level operator
+ nexts= 0:avatar transition/ ID=147  in block CA
+attributes=0 49 50 
+action#0: 49 
+27 bunchid:3 @0/ 0: avatar transition ID=147 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=126 
+weight=1.0
+ in block CA (silent)
+attributes=0 49 50 
+28 bunchid:3 @0/ 0: choice__0 ID=126 / top level operator
+ nexts= 0:avatar transition/ ID=150 1:avatar transition/ ID=156  in block CA (silent)
+attributes=0 49 50 
+29 bunchid:3 @0/ 0: avatar transition ID=172 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=49 
+30 bunchid:3 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=49 
+31 bunchid:3 @0/ 0: avatar transition ID=150 / top level operator
+ value: weight:1.0  guard=Distance <= Threshold actions:  Speed = 0
+ nexts= 0:Waiting/ ID=123 
+weight=1.0
+Speed = 0 / guard Distance <= Threshold /  in block CA
+attributes=0 49 50 
+action#0: Speed = 0 
+32 bunchid:4 @0/ 0: Waiting ID=123 / top level operator
+ nexts= 0:avatar transition/ ID=149  in block CA (silent)
+attributes=0 49 50 
+33 bunchid:4 @0/ 0: avatar transition ID=175 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=170 
+weight=1.0
+ in block US
+attributes=49 
+34 bunchid:4 @0/ 0: random ID=170 / top level operator
+ nexts= 0:avatar transition/ ID=176  in block US
+attributes=47 
+action#0: Distance = 47 
+35 bunchid:5 @0/ 0: avatar transition ID=176 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=171 
+weight=1.0
+ in block US (silent)
+attributes=47 
+36 bunchid:5 @0/ 0: avatar transition ID=149 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=124 
+weight=1.0
+ in block CA
+attributes=0 49 50 
+37 bunchid:5 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=124 / top level operator
+ nexts= 0:avatar transition/ ID=148  in block CA
+attributes=0 49 50 
+38 bunchid:5 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=0 
+39 bunchid:5 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=0 
+action#0: 0 
+40 bunchid:6 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+41 bunchid:6 @0/ 0: avatar transition ID=148 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=125 
+weight=1.0
+ in block CA (silent)
+attributes=0 49 50 
+42 bunchid:6 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=0 
+43 bunchid:6 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+44 bunchid:6 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=0 
+45 bunchid:6 @0/ 0: action_on_signal:US_Distance_Get ID=171 / top level operator
+ nexts= 0:avatar transition/ ID=172  in block US
+attributes=47 
+46 bunchid:6 @0/ 0: action_on_signal:US_Distance_Get ID=125 / top level operator
+ nexts= 0:avatar transition/ ID=147  in block CA
+attributes=0 47 50 
+action#0: 47 
+47 bunchid:7 @0/ 0: avatar transition ID=147 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=126 
+weight=1.0
+ in block CA (silent)
+attributes=0 47 50 
+48 bunchid:7 @0/ 0: avatar transition ID=172 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=47 
+49 bunchid:7 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=47 
+50 bunchid:7 @0/ 0: choice__0 ID=126 / top level operator
+ nexts= 0:avatar transition/ ID=150 1:avatar transition/ ID=156  in block CA (silent)
+attributes=0 47 50 
+51 bunchid:7 @0/ 0: avatar transition ID=175 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=170 
+weight=1.0
+ in block US
+attributes=47 
+52 bunchid:7 @0/ 0: random ID=170 / top level operator
+ nexts= 0:avatar transition/ ID=176  in block US
+attributes=53 
+action#0: Distance = 53 
+53 bunchid:8 @0/ 0: avatar transition ID=176 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=171 
+weight=1.0
+ in block US (silent)
+attributes=53 
+54 bunchid:8 @0/ 0: avatar transition ID=150 / top level operator
+ value: weight:1.0  guard=Distance <= Threshold actions:  Speed = 0
+ nexts= 0:Waiting/ ID=123 
+weight=1.0
+Speed = 0 / guard Distance <= Threshold /  in block CA
+attributes=0 47 50 
+action#0: Speed = 0 
+55 bunchid:9 @0/ 0: Waiting ID=123 / top level operator
+ nexts= 0:avatar transition/ ID=149  in block CA (silent)
+attributes=0 47 50 
+56 bunchid:9 @0/ 0: avatar transition ID=149 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=124 
+weight=1.0
+ in block CA
+attributes=0 47 50 
+57 bunchid:9 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=124 / top level operator
+ nexts= 0:avatar transition/ ID=148  in block CA
+attributes=0 47 50 
+58 bunchid:9 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=0 
+59 bunchid:9 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=0 
+action#0: 0 
+60 bunchid:10 @0/ 0: avatar transition ID=148 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=125 
+weight=1.0
+ in block CA (silent)
+attributes=0 47 50 
+61 bunchid:10 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+62 bunchid:10 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=0 
+63 bunchid:10 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+64 bunchid:10 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=0 
+65 bunchid:10 @0/ 0: action_on_signal:US_Distance_Get ID=171 / top level operator
+ nexts= 0:avatar transition/ ID=172  in block US
+attributes=53 
+66 bunchid:10 @0/ 0: action_on_signal:US_Distance_Get ID=125 / top level operator
+ nexts= 0:avatar transition/ ID=147  in block CA
+attributes=0 53 50 
+action#0: 53 
+67 bunchid:11 @0/ 0: avatar transition ID=147 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=126 
+weight=1.0
+ in block CA (silent)
+attributes=0 53 50 
+68 bunchid:11 @0/ 0: avatar transition ID=172 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=53 
+69 bunchid:11 @0/ 0: choice__0 ID=126 / top level operator
+ nexts= 0:avatar transition/ ID=150 1:avatar transition/ ID=156  in block CA (silent)
+attributes=0 53 50 
+70 bunchid:11 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=53 
+71 bunchid:11 @0/ 0: avatar transition ID=156 / top level operator
+ value: weight:1.0  guard=Distance > Threshold actions:  Speed = 30
+ nexts= 0:Driving/ ID=127 
+weight=1.0
+Speed = 30 / guard Distance > Threshold /  in block CA
+attributes=30 53 50 
+action#0: Speed = 30 
+72 bunchid:12 @0/ 0: Driving ID=127 / top level operator
+ nexts= 0:avatar transition/ ID=146  in block CA (silent)
+attributes=30 53 50 
+73 bunchid:12 @0/ 0: avatar transition ID=146 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=128 
+weight=1.0
+ in block CA
+attributes=30 53 50 
+74 bunchid:12 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=128 / top level operator
+ nexts= 0:avatar transition/ ID=145  in block CA
+attributes=30 53 50 
+75 bunchid:12 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=0 
+76 bunchid:12 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=30 
+action#0: 30 
+77 bunchid:13 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=30 
+78 bunchid:13 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=30 
+79 bunchid:13 @0/ 0: avatar transition ID=145 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=129 
+weight=1.0
+ in block CA (silent)
+attributes=30 53 50 
+80 bunchid:13 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=30 
+81 bunchid:13 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=30 
+82 bunchid:13 @0/ 0: avatar transition ID=175 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=170 
+weight=1.0
+ in block US
+attributes=53 
+83 bunchid:13 @0/ 0: random ID=170 / top level operator
+ nexts= 0:avatar transition/ ID=176  in block US
+attributes=48 
+action#0: Distance = 48 
+84 bunchid:14 @0/ 0: avatar transition ID=176 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=171 
+weight=1.0
+ in block US (silent)
+attributes=48 
+85 bunchid:14 @0/ 0: action_on_signal:US_Distance_Get ID=171 / top level operator
+ nexts= 0:avatar transition/ ID=172  in block US
+attributes=48 
+86 bunchid:14 @0/ 0: action_on_signal:US_Distance_Get ID=129 / top level operator
+ nexts= 0:avatar transition/ ID=163  in block CA
+attributes=30 48 50 
+action#0: 48 
+87 bunchid:15 @0/ 0: avatar transition ID=163 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__1/ ID=130 
+weight=1.0
+ in block CA (silent)
+attributes=30 48 50 
+88 bunchid:15 @0/ 0: avatar transition ID=172 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=48 
+89 bunchid:15 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=48 
+90 bunchid:15 @0/ 0: choice__1 ID=130 / top level operator
+ nexts= 0:avatar transition/ ID=131 1:avatar transition/ ID=138  in block CA (silent)
+attributes=30 48 50 
+91 bunchid:15 @0/ 0: avatar transition ID=138 / top level operator
+ value: weight:1.0  guard=Distance <= Threshold actions:  Speed = 0
+ nexts= 0:Waiting/ ID=123 
+weight=1.0
+Speed = 0 / guard Distance <= Threshold /  in block CA
+attributes=0 48 50 
+action#0: Speed = 0 
+92 bunchid:16 @0/ 0: Waiting ID=123 / top level operator
+ nexts= 0:avatar transition/ ID=149  in block CA (silent)
+attributes=0 48 50 
+93 bunchid:16 @0/ 0: avatar transition ID=149 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=124 
+weight=1.0
+ in block CA
+attributes=0 48 50 
+94 bunchid:16 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=124 / top level operator
+ nexts= 0:avatar transition/ ID=148  in block CA
+attributes=0 48 50 
+95 bunchid:16 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=30 
+96 bunchid:16 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=0 
+action#0: 0 
+97 bunchid:17 @0/ 0: avatar transition ID=148 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=125 
+weight=1.0
+ in block CA (silent)
+attributes=0 48 50 
+98 bunchid:17 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+99 bunchid:17 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=0 
+100 bunchid:17 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=0 
+101 bunchid:17 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=0 
+102 bunchid:17 @0/ 0: avatar transition ID=175 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=170 
+weight=1.0
+ in block US
+attributes=48 
+103 bunchid:17 @0/ 0: random ID=170 / top level operator
+ nexts= 0:avatar transition/ ID=176  in block US
+attributes=53 
+action#0: Distance = 53 
+104 bunchid:18 @0/ 0: avatar transition ID=176 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=171 
+weight=1.0
+ in block US (silent)
+attributes=53 
+105 bunchid:18 @0/ 0: action_on_signal:US_Distance_Get ID=171 / top level operator
+ nexts= 0:avatar transition/ ID=172  in block US
+attributes=53 
+106 bunchid:18 @0/ 0: action_on_signal:US_Distance_Get ID=125 / top level operator
+ nexts= 0:avatar transition/ ID=147  in block CA
+attributes=0 53 50 
+action#0: 53 
+107 bunchid:19 @0/ 0: avatar transition ID=172 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=169 
+weight=1.0
+ in block US (silent)
+attributes=53 
+108 bunchid:19 @0/ 0: avatar transition ID=147 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=126 
+weight=1.0
+ in block CA (silent)
+attributes=0 53 50 
+109 bunchid:19 @0/ 0: choice__0 ID=126 / top level operator
+ nexts= 0:avatar transition/ ID=150 1:avatar transition/ ID=156  in block CA (silent)
+attributes=0 53 50 
+110 bunchid:19 @0/ 0: Busy ID=169 / top level operator
+ nexts= 0:avatar transition/ ID=175  in block US (silent)
+attributes=53 
+111 bunchid:19 @0/ 0: avatar transition ID=156 / top level operator
+ value: weight:1.0  guard=Distance > Threshold actions:  Speed = 30
+ nexts= 0:Driving/ ID=127 
+weight=1.0
+Speed = 30 / guard Distance > Threshold /  in block CA
+attributes=30 53 50 
+action#0: Speed = 30 
+112 bunchid:20 @0/ 0: Driving ID=127 / top level operator
+ nexts= 0:avatar transition/ ID=146  in block CA (silent)
+attributes=30 53 50 
+113 bunchid:20 @0/ 0: avatar transition ID=146 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=128 
+weight=1.0
+ in block CA
+attributes=30 53 50 
+114 bunchid:20 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=128 / top level operator
+ nexts= 0:avatar transition/ ID=145  in block CA
+attributes=30 53 50 
+115 bunchid:20 @0/ 0: avatar transition ID=185 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=180 
+weight=1.0
+ in block DC_motor
+attributes=0 
+116 bunchid:20 @0/ 0: action_on_signal:DCmotor_Set_Speed ID=180 / top level operator
+ nexts= 0:avatar transition/ ID=186  in block DC_motor
+attributes=30 
+action#0: 30 
+117 bunchid:21 @0/ 0: avatar transition ID=186 / top level operator
+ value: weight:1.0 
+ nexts= 0:Busy/ ID=181 
+weight=1.0
+ in block DC_motor (silent)
+attributes=30 
+118 bunchid:21 @0/ 0: avatar transition ID=145 / top level operator
+ value: weight:1.0 
+ nexts= 0:action_on_signal/ ID=129 
+weight=1.0
+ in block CA (silent)
+attributes=30 53 50 
+119 bunchid:21 @0/ 0: Busy ID=181 / top level operator
+ nexts= 0:avatar transition/ ID=182  in block DC_motor (silent)
+attributes=30 
+120 bunchid:21 @0/ 0: avatar transition ID=182 / top level operator
+ value: weight:1.0 
+ nexts= 0:Idle/ ID=179 
+weight=1.0
+ in block DC_motor (silent)
+attributes=30 
+121 bunchid:21 @0/ 0: Idle ID=179 / top level operator
+ nexts= 0:avatar transition/ ID=185  in block DC_motor (silent)
+attributes=30 

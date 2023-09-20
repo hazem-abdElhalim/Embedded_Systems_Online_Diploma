@@ -1,0 +1,341 @@
+0 bunchid:0 @0/ 0: start ID=60 / top level operator
+ nexts= 0:avatar transition/ ID=91  in block CA (silent)
+attributes=0 0 50 
+1 bunchid:0 @0/ 0: avatar transition ID=91 / top level operator
+ value: weight:1.0 
+ nexts= 0:Waiting/ ID=61 
+weight=1.0
+ in block CA (silent)
+attributes=0 0 50 
+2 bunchid:0 @0/ 0: Waiting ID=61 / top level operator
+ nexts= 0:avatar transition/ ID=84  in block CA (silent)
+attributes=0 0 50 
+3 bunchid:0 @0/ 0: avatar transition ID=84 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=62 
+weight=1.0
+ in block CA
+attributes=0 0 50 
+4 bunchid:0 @0/ 0: random ID=62 / top level operator
+ nexts= 0:avatar transition/ ID=83  in block CA
+attributes=53 0 50 
+action#0: Distance = 53 
+5 bunchid:1 @0/ 0: avatar transition ID=83 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=63 
+weight=1.0
+ in block CA (silent)
+attributes=53 0 50 
+6 bunchid:1 @0/ 0: choice__0 ID=63 / top level operator
+ nexts= 0:avatar transition/ ID=85 1:avatar transition/ ID=92  in block CA (silent)
+attributes=53 0 50 
+7 bunchid:1 @0/ 0: avatar transition ID=85 / top level operator
+ value: weight:1.0  guard=Distance > threshold actions:  Speed = 30
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+Speed = 30 / guard Distance > threshold /  in block CA
+attributes=53 30 50 
+action#0: Speed = 30 
+8 bunchid:2 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=53 30 50 
+9 bunchid:2 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=53 30 50 
+10 bunchid:3 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=53 30 50 
+11 bunchid:3 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=53 30 50 
+12 bunchid:4 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=53 30 50 
+13 bunchid:4 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=53 30 50 
+14 bunchid:5 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=53 30 50 
+15 bunchid:5 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=53 30 50 
+16 bunchid:6 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=53 30 50 
+17 bunchid:6 @0/ 0: avatar transition ID=81 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=65 
+weight=1.0
+ in block CA
+attributes=53 30 50 
+18 bunchid:6 @0/ 0: random ID=65 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block CA
+attributes=47 30 50 
+action#0: Distance = 47 
+19 bunchid:7 @0/ 0: avatar transition ID=98 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__1/ ID=66 
+weight=1.0
+ in block CA (silent)
+attributes=47 30 50 
+20 bunchid:7 @0/ 0: choice__1 ID=66 / top level operator
+ nexts= 0:avatar transition/ ID=67 1:avatar transition/ ID=74  in block CA (silent)
+attributes=47 30 50 
+21 bunchid:7 @0/ 0: avatar transition ID=74 / top level operator
+ value: weight:1.0  guard=Distance <= threshold actions:  Speed = 0
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+Speed = 0 / guard Distance <= threshold /  in block CA
+attributes=47 0 50 
+action#0: Speed = 0 
+22 bunchid:8 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=47 0 50 
+23 bunchid:8 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=47 0 50 
+24 bunchid:9 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=47 0 50 
+25 bunchid:9 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=47 0 50 
+26 bunchid:10 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=47 0 50 
+27 bunchid:10 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=47 0 50 
+28 bunchid:11 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=47 0 50 
+29 bunchid:11 @0/ 0: avatar transition ID=81 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=65 
+weight=1.0
+ in block CA
+attributes=47 0 50 
+30 bunchid:11 @0/ 0: random ID=65 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block CA
+attributes=51 0 50 
+action#0: Distance = 51 
+31 bunchid:12 @0/ 0: avatar transition ID=98 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__1/ ID=66 
+weight=1.0
+ in block CA (silent)
+attributes=51 0 50 
+32 bunchid:12 @0/ 0: choice__1 ID=66 / top level operator
+ nexts= 0:avatar transition/ ID=67 1:avatar transition/ ID=74  in block CA (silent)
+attributes=51 0 50 
+33 bunchid:12 @0/ 0: avatar transition ID=67 / top level operator
+ value: weight:1.0  guard=Distance > threshold actions:  Speed = 30
+ nexts= 0:Waiting/ ID=61 
+weight=1.0
+Speed = 30 / guard Distance > threshold /  in block CA
+attributes=51 30 50 
+action#0: Speed = 30 
+34 bunchid:13 @0/ 0: Waiting ID=61 / top level operator
+ nexts= 0:avatar transition/ ID=84  in block CA (silent)
+attributes=51 30 50 
+35 bunchid:13 @0/ 0: avatar transition ID=84 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=62 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+36 bunchid:13 @0/ 0: random ID=62 / top level operator
+ nexts= 0:avatar transition/ ID=83  in block CA
+attributes=47 30 50 
+action#0: Distance = 47 
+37 bunchid:14 @0/ 0: avatar transition ID=83 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=63 
+weight=1.0
+ in block CA (silent)
+attributes=47 30 50 
+38 bunchid:14 @0/ 0: choice__0 ID=63 / top level operator
+ nexts= 0:avatar transition/ ID=85 1:avatar transition/ ID=92  in block CA (silent)
+attributes=47 30 50 
+39 bunchid:14 @0/ 0: avatar transition ID=92 / top level operator
+ value: weight:1.0  guard=Distance <= threshold actions:  Speed = 0
+ nexts= 0:Waiting/ ID=61 
+weight=1.0
+Speed = 0 / guard Distance <= threshold /  in block CA
+attributes=47 0 50 
+action#0: Speed = 0 
+40 bunchid:15 @0/ 0: Waiting ID=61 / top level operator
+ nexts= 0:avatar transition/ ID=84  in block CA (silent)
+attributes=47 0 50 
+41 bunchid:15 @0/ 0: avatar transition ID=84 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=62 
+weight=1.0
+ in block CA
+attributes=47 0 50 
+42 bunchid:15 @0/ 0: random ID=62 / top level operator
+ nexts= 0:avatar transition/ ID=83  in block CA
+attributes=45 0 50 
+action#0: Distance = 45 
+43 bunchid:16 @0/ 0: avatar transition ID=83 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=63 
+weight=1.0
+ in block CA (silent)
+attributes=45 0 50 
+44 bunchid:16 @0/ 0: choice__0 ID=63 / top level operator
+ nexts= 0:avatar transition/ ID=85 1:avatar transition/ ID=92  in block CA (silent)
+attributes=45 0 50 
+45 bunchid:16 @0/ 0: avatar transition ID=92 / top level operator
+ value: weight:1.0  guard=Distance <= threshold actions:  Speed = 0
+ nexts= 0:Waiting/ ID=61 
+weight=1.0
+Speed = 0 / guard Distance <= threshold /  in block CA
+attributes=45 0 50 
+action#0: Speed = 0 
+46 bunchid:17 @0/ 0: Waiting ID=61 / top level operator
+ nexts= 0:avatar transition/ ID=84  in block CA (silent)
+attributes=45 0 50 
+47 bunchid:17 @0/ 0: avatar transition ID=84 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=62 
+weight=1.0
+ in block CA
+attributes=45 0 50 
+48 bunchid:17 @0/ 0: random ID=62 / top level operator
+ nexts= 0:avatar transition/ ID=83  in block CA
+attributes=51 0 50 
+action#0: Distance = 51 
+49 bunchid:18 @0/ 0: avatar transition ID=83 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__0/ ID=63 
+weight=1.0
+ in block CA (silent)
+attributes=51 0 50 
+50 bunchid:18 @0/ 0: choice__0 ID=63 / top level operator
+ nexts= 0:avatar transition/ ID=85 1:avatar transition/ ID=92  in block CA (silent)
+attributes=51 0 50 
+51 bunchid:18 @0/ 0: avatar transition ID=85 / top level operator
+ value: weight:1.0  guard=Distance > threshold actions:  Speed = 30
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+Speed = 30 / guard Distance > threshold /  in block CA
+attributes=51 30 50 
+action#0: Speed = 30 
+52 bunchid:19 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+53 bunchid:19 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+54 bunchid:20 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+55 bunchid:20 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+56 bunchid:21 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+57 bunchid:21 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+58 bunchid:22 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+59 bunchid:22 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+60 bunchid:23 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+61 bunchid:23 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+62 bunchid:24 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+63 bunchid:24 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+64 bunchid:25 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+65 bunchid:25 @0/ 0: avatar transition ID=82 / top level operator
+ value: weight:1.0 
+ nexts= 0:Driving/ ID=64 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+66 bunchid:26 @0/ 0: Driving ID=64 / top level operator
+ nexts= 0:avatar transition/ ID=81 1:avatar transition/ ID=82  in block CA (silent)
+attributes=51 30 50 
+67 bunchid:26 @0/ 0: avatar transition ID=81 / top level operator
+ value: weight:1.0 
+ nexts= 0:random/ ID=65 
+weight=1.0
+ in block CA
+attributes=51 30 50 
+68 bunchid:26 @0/ 0: random ID=65 / top level operator
+ nexts= 0:avatar transition/ ID=98  in block CA
+attributes=52 30 50 
+action#0: Distance = 52 
+69 bunchid:27 @0/ 0: avatar transition ID=98 / top level operator
+ value: weight:1.0 
+ nexts= 0:choice__1/ ID=66 
+weight=1.0
+ in block CA (silent)
+attributes=52 30 50 
+70 bunchid:27 @0/ 0: choice__1 ID=66 / top level operator
+ nexts= 0:avatar transition/ ID=67 1:avatar transition/ ID=74  in block CA (silent)
+attributes=52 30 50 
+71 bunchid:27 @0/ 0: avatar transition ID=67 / top level operator
+ value: weight:1.0  guard=Distance > threshold actions:  Speed = 30
+ nexts= 0:Waiting/ ID=61 
+weight=1.0
+Speed = 30 / guard Distance > threshold /  in block CA
+attributes=52 30 50 
+action#0: Speed = 30 
+72 bunchid:28 @0/ 0: Waiting ID=61 / top level operator
+ nexts= 0:avatar transition/ ID=84  in block CA (silent)
+attributes=52 30 50 
